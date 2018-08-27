@@ -11,15 +11,15 @@
 {{ end }}
 
 {{ with .Site.Social.bitbucket }}
-  <li><a href="//bitbucket.com/{{.}}" target="_blank" title="Bitbucket" class="fa fa-bitbucket"></a></li>
+  <li><a href="//bitbucket.com/{{.}}" target="_blank" title="Bitbucket" class="fab fa-bitbucket"></a></li>
 {{ end }}
 
 {{ with .Site.Social.jsfiddle }}
-  <li><a href="//jsfiddle.com/{{.}}" target="_blank" title="JSFiddle" class="fa fa-jsfiddle"></a></li>
+  <li><a href="//jsfiddle.com/{{.}}" target="_blank" title="JSFiddle" class="fab fa-jsfiddle"></a></li>
 {{ end }}
 
 {{ with .Site.Social.codepen }}
-  <li><a href="//codepen.io/{{.}}" target="_blank" title="CodePen" class="fa fa-codepen"></a></li>
+  <li><a href="//codepen.io/{{.}}" target="_blank" title="CodePen" class="fab fa-codepen"></a></li>
 {{ end }}
 
 {{ with .Site.Social.deviantart }}
@@ -27,7 +27,7 @@
 {{ end }}
 
 {{ with .Site.Social.flickr }}
-  <li><a href="//flickr.com/photos/{{.}}" target="_blank" title="Flickr" class="fa fa-flickr"></a></li>
+  <li><a href="//flickr.com/photos/{{.}}" target="_blank" title="Flickr" class="fab fa-flickr"></a></li>
 {{ end }}
 
 {{ with .Site.Social.behance }}
@@ -92,6 +92,10 @@
 
 {{ with .Site.Social.whatsapp }}
   <li><a href="//api.whatsapp.com/send?phone={{.}}" target="_blank" title="WhatsApp" class="fa fa-whatsapp"></a></li>
+{{ end }}
+
+{{ with .Site.Social.mastodon }}
+  <li><a href="//mastodon.social/@{{.}}" target="_blank" title="Mastodon" class="fab fa-mastodon"></a></li>
 {{ end }}
 
 <!-- TODO: WeChat and QQ Check -->
